@@ -1,0 +1,26 @@
+{
+    "name": "freefem-for-vscode",
+    "displayName": "FreeFEM for VSCode",
+    "description": "FreeFEM support for VSCode",
+    "version": "0.0.1",
+    "publisher": "Jotaro Shigeyama",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "freefem",
+            "aliases": ["FreeFEM", "freefem"],
+            "extensions": [".edp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "freefem",
+            "scopeName": "source.edp",
+            "path": "./syntaxes/freefem.tmLanguage.json"
+        }]
+    }
+}
